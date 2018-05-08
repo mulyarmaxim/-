@@ -131,7 +131,7 @@
           </a>
           <a href="#" class="goods__item  item">
             <h3 class="item__title">
-              Мужчинам
+              Женщинам
             </h3>
             <p class="goods__quantity">
               16 видов
@@ -202,10 +202,10 @@
               Выбрать
             </button>
           </div>
-          <span class="slider__slide-number">
+        </section>
+        <span class="slider__slide-number">
           1/12
         </span>
-        </section>
         <ul class="slider__pagination  pagination">
           <li class="pagination__item">
             <button class="pagination__button  pagination__button--active" type="button"></button>
@@ -410,5 +410,45 @@
       </form>
     </section>
   </section>
+  <section class="reviews">
+    <h2 class="reviews__title  default-title">
+      Отзывы
+    </h2>
+    <section class="reviews__column  slider">
+      <section class="slider__item">
+        <picture>
+          <source media="(max-width: 1300px) and (min-width: 801px)" srcset="img/client-image-1--tablet.jpg">
+          <source media="(max-width: 800px)" srcset="img/client-image-1--mobile.jpg">
+          <img src="img/client-image-1--desktop.jpg" alt="Шоколадный ганаш" class="slider__image">
+        </picture>
+        <div class="slider__column">
+          <h3 class="slider__client-name">
+            Мария
+          </h3>
+          <p class="slider__client-information">
+            юрист, 33 года
+          </p>
+          <p class="slider__client-review">
+            Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку!
+            Теперь будем заказывать торты только у вас для наших семейных праздников:) 
+            <button class="slider__client-btn" type="button">
+              Развернуть
+            </button>
+          </p>
+        </div>
+      </section>
+      <span class="slider__slide-number">
+          1/12
+        </span>
+      <button class="slider__button  slider__button--prev">
+        <span class="visually-hidden">Предыдущий слайд</span>
+      </button>
+      <button class="slider__button  slider__button--next">
+        <span class="visually-hidden">Следующий слайд</span>
+      </button>
+    </section>
+  </section>
+
+
 </body>
 </html>
