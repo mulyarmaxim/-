@@ -33,7 +33,7 @@
     <div class="promo__container">
       <div class="inner">
         <h1 class="promo__title  page-title">Торты на заказ</h1>
-        <em class="promo__subtitle  subtitle">Ручная работа</em>
+        <em class="promo__subtitle  default-subtitle">Ручная работа</em>
         <a href="#" class="promo__link  button">
           Выбрать торт
         </a>
@@ -448,7 +448,70 @@
       </button>
     </section>
   </section>
-
-
+  <section class="about">
+    <div class="inner  about__inner">
+      <div class="about container">
+        <section class="about__column">
+          <h2 class="about__title  default-title">
+            О нас
+          </h2>
+          <em class="about__subtitle  default-subtitle">
+            О кандитере
+          </em>
+          <dl class="about__list">
+            <dt class="about__list-title">
+              Кондитер - как призвание
+            </dt>
+            <dd class="about__list-description">
+              Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило
+              кондитерское искусство.С ранних лет он увлекался утонченным мастерством и обратился к своим талантам
+              как кондитер.
+            </dd>
+            <dt class="about__list-title">
+              Принцип – натуральные ингредиенты
+            </dt>
+            <dd class="about__list-description">
+              Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для
+              торжества, а главным принципом является выбор натуральных ингредиентов.
+            </dd>
+          </dl>
+          <ul class="about__social  social">
+            <li class="social__item">
+              <a href="#" class="social__link  social__link--instagram">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link  social__link--vk">
+                <span class="visually-hidden">Vkontakte</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link  social__link--twitter">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <picture>
+          <source media="(max-width: 1300px) and (min-width: 801px)" srcset="img/confectioner-image-1--tablet.jpg">
+          <source media="(max-width: 800px)" srcset="img/confectioner-image-1--mobile.jpg">
+          <img src="img/confectioner-image-1--desktop.jpg" alt="Кондитер">
+        </picture>
+      </div>
+      <svg width="60" height="40">
+        <use xlink:href="img/sprite.svg#icon-quotes"></use>
+      </svg>
+      <blockquote class="about__quote">
+        Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются
+        в божественное блюдо.
+      </blockquote>
+      <picture>
+        <source media="(max-width: 1300px) and (min-width: 801px)" srcset="img/painting--tablet.png">
+        <source media="(max-width: 800px)" srcset="img/painting--mobile.png">
+        <img src="img/painting--desktop.png" alt="Роспись кондитера">
+      </picture>
+    </div>
+  </section>
 </body>
 </html>
