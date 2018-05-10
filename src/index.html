@@ -692,5 +692,21 @@
       &#169; 2018 Cakes
     </p>
   </footer>
+
+  <script>
+    (function() {
+      let button = document.querySelector('.page-header__menu-toggle'),
+          menu = document.querySelector('.page-header__navigation');
+
+      function onButtonClick(evt) {
+        let current = getComputedStyle(menu).display;
+
+        this.classList.toggle('page-header__menu-toggle--close');
+        menu.style.display = current === 'block' ? '' : 'block';
+      }
+
+      button.addEventListener('click', onButtonClick);
+    })();
+  </script>
 </body>
 </html>
