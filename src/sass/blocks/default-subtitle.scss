@@ -5,3 +5,15 @@
 
   font: 40px 'Intro Script', $def-font;
 }
+
+@media (max-width: $tablet-width) {
+  .default-subtitle {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .default-subtitle {
+    font-size: 22px;
+  }
+}
