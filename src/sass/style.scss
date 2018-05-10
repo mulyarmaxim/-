@@ -1,4 +1,9 @@
 @import 'font';
 @import 'normalize';
 @import 'variables';
+@import 'mixin.scss';
 @import 'scaffolding';
+@import 'blocks/page-header';
+@import 'blocks/logo';
+@import 'blocks/navigation';
+@import 'blocks/phone';
