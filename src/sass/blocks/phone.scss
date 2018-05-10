@@ -1,0 +1,22 @@
+.phone {
+  padding-top: 10px;
+  margin: 0;
+
+  font-size: 15px;
+  text-align: right;
+  font-weight: 700;
+}
+
+
+@media (max-width: $tablet-width) {
+  .phone {
+    padding-top: 3px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .phone {
+    display: none;
+  }
+}
