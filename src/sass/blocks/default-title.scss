@@ -1,0 +1,19 @@
+.default-title {
+  margin: 0;
+
+  font: 700 40px 'Playfair Display', $def-font;
+  letter-spacing: 0.01em;
+  color: #2d2829;
+}
+
+@media (max-width: $tablet-width) {
+  .default-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .default-title {
+    font-size: 24px;
+  }
+}
