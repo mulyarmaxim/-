@@ -1,0 +1,29 @@
+.decoration-list {
+  @include reset-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.decoration-list__item {
+  display: flex;
+  width: 215px;
+}
+
+.decoration-list__icon {
+  flex-shrink: 0;
+  width: 55px;
+  margin-right: 12px;
+
+  fill: #f50049;
+}
+
+.decoration-list__description {
+  width: 148px;
+  padding-top: 15px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
