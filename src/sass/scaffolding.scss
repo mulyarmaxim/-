@@ -1,5 +1,7 @@
 body {
   font: 18px/24px Circe, $def-font;
+
+  background: #fbebea;
 }
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -15,4 +17,23 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.inner {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+  .inner {
+    width: 676px;
+    padding: 0 28px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .inner {
+    width: 282px;
+    padding: 0 21px;
+  }
 }
