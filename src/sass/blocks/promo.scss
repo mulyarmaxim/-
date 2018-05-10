@@ -1,0 +1,92 @@
+.promo {
+  padding-top: 145px;
+  padding-bottom: 250px;
+}
+
+.promo__container {
+  width: 505px;
+}
+
+.promo__title {
+  margin-top: 0;
+  margin-bottom: 18px;
+
+  font: 78px/71px 'Playfair Display', $def-font;
+  letter-spacing: 0.075em;
+}
+
+.promo__subtitle {
+  margin-bottom: 58px;
+}
+
+.promo__link {
+  margin-bottom: 129px;
+}
+
+.promo__information {
+
+}
+
+
+@media (max-width: $tablet-width) {
+  .promo {
+    padding-top: 105px;
+  }
+
+  .promo__title {
+    max-width: 325px;
+
+    font-size: 60px;
+    line-height: 55px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 55px;
+  }
+
+  .promo__link {
+    margin-bottom: 148px;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .promo {
+    padding-top: 130px;
+    padding-bottom: 10px;
+
+    background: url('../img/bg-promo--mobile.png') no-repeat center top;
+  }
+
+  .promo__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  .promo__title {
+    width: auto;
+    margin-bottom: 16px;
+
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .promo__subtitle {
+    width: 100%;
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  .promo__link {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .promo__information {
+    margin-bottom: 31px;
+  }
+}
