@@ -27,3 +27,25 @@
   line-height: 18px;
   color: #000000;
 }
+
+
+@media (max-width: $mobile-width) {
+  .decoration-list {
+
+  }
+
+  .decoration-list__item {
+    margin-bottom: 10px;
+  }
+
+  .decoration-list__icon {
+    width: 33px;
+    height: 33px;
+  }
+
+  .decoration-list__description {
+    flex-shrink: 0;
+    padding-top: 0;
+    width: 240px;
+  }
+}
