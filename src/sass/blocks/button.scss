@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  box-sizing: content-box;
+  padding: 15px 66px;
+  margin: 0;
+  border: none;
+
+  font: 400 13px Circe, $def-font;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background: #f50049;
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 7px 1px rgba(255, 0, 67, 0.3);
+  }
+}
