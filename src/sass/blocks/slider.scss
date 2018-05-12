@@ -1,0 +1,318 @@
+.slider {
+  position: relative;
+
+  padding-top: 19px;
+}
+
+.slider__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+  &--small {
+    display: block;
+    width: 325px;
+
+    box-shadow: 0 7px 13px 0.25px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.slider__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 665px;
+  margin-left: 80px;
+}
+
+.slider img,
+.slider picture {
+  flex-shrink: 0;
+}
+
+.slider__column {
+  margin-left: 40px;
+}
+
+.slider__title {
+  margin-top: 69px;
+  margin-bottom: 2px;
+
+  font-size: 20px;
+}
+
+.slider__description {
+  margin-top: 0;
+}
+
+.slider__price {
+  display: block;
+  margin-bottom: 46px;
+
+  font: 700 22px 'Playfair Display', $def-font;
+
+  &--center {
+    margin-bottom: 0;
+
+    text-align: center;
+  }
+}
+
+.slider__cake-name {
+  margin: 0;
+
+  font-size: 20px;
+  text-align: center;
+}
+
+.slider__button {
+  padding: 15px 60px;
+  margin-left: 5px;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--prev,
+  &--next {
+    position: absolute;
+    top: 207px;
+
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #f17d91;
+
+    background: none;
+    cursor: pointer;
+    transform: rotate(45deg);
+  }
+
+
+  &--prev {
+    left: -98px;
+
+    border-color: transparent transparent #f17d91 #f17d91;
+  }
+
+  &--next {
+    right: -112px;
+
+    border-color: #f17d91 #f17d91 transparent transparent;
+  }
+
+  &--small-left {
+    left: 20px;
+  }
+}
+
+.slider__slide-number {
+  position: absolute;
+  right: -113px;
+  bottom: 0;
+
+  color: #2f2f2f;
+}
+
+.slider__indicator {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .slider {
+    padding-top: 12px;
+  }
+
+  .slider__column {
+    margin-left: 22px;
+  }
+
+  .slider__title {
+    margin-top: 21px;
+
+    font-size: 18px;
+  }
+
+  .slider__description {
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .slider__price {
+    margin-bottom: 25px;
+
+    font-size: 20px;
+  }
+
+  .slider__button {
+    padding: 14px 43px;
+
+    font-size: 10px;
+
+    &--prev,
+    &--next {
+      top: 122px;
+      z-index: 10;
+
+      width: 12px;
+      height: 12px;
+      padding: 0;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: -8px;
+        bottom: -12px;
+        z-index: -1;
+
+        background: rgba(0,0,0, .1);
+        border-radius: 50%;
+        transform: rotate(-45deg);
+      }
+
+    }
+
+    &--prev {
+      left: -24px;
+
+      &::before {
+        left: -13px;
+        right: -7px;
+      }
+    }
+
+    &--next {
+      right: -85px;
+
+      &::before {
+        top: -11px;
+        bottom: -10px;
+        left: -7px;
+        right: -13px;
+      }
+    }
+  }
+
+  .slider__slide-number {
+    right: -86px;
+    bottom: 0;
+
+    font-size: 11px;
+  }
+
+  .slider__container {
+    width: 417px;
+    margin-left: 45px;
+  }
+
+  .slider__item {
+
+    &--small {
+      width: 196px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .slider__cake-name,
+  .slider__price {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+  .slider__item {
+    display: block;
+  }
+
+  .slider__button--next,
+  .slider__button--prev {
+    display: none;
+  }
+
+  .slider__button {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .slider__column {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .slider__title {
+    margin-top: 25px;
+
+    font-size: 16px;
+  }
+
+  .slider__description {
+    margin-bottom: 11px;
+  }
+
+  .slider__price {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .slider__slide-number {
+    right: 0;
+    top: 12px;
+
+    width: 25px;
+    height: 25px;
+
+    color: #ffffff;
+    text-align: center;
+
+    background: #000000;
+  }
+
+  .slider__button--hidden {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .slider__container {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .slider__item {
+
+    &--small {
+      display: none;
+      width: 168px;
+      margin: 0 auto;
+    }
+
+    &--active {
+      display: block;
+      padding-top: 40px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .slider__indicator {
+    position: absolute;
+    top: 142px;
+    left: 0;
+    right: 0;
+
+    display: block;
+    margin: 0 auto;
+
+    &--big-top {
+      top: 290px;
+    }
+  }
+}
