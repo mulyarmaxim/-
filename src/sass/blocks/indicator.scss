@@ -1,29 +1,36 @@
 .indicator {
-  @include reset-list();
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  display: none;
 }
 
-.indicator__item {
-  width: 7px;
-  height: 7px;
-  margin: 0 2px;
 
-  background-color: #dddddd;
-  border-radius: 50%;
+@media (max-width: $mobile-width) {
+  .indicator {
+    @include reset-list();
 
-  &--active {
-    width: 10px;
-    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    background: #f50049;
   }
 
-  &--small {
-    width: 5px;
-    height: 5px;
+  .indicator__item {
+    width: 7px;
+    height: 7px;
+    margin: 0 2px;
+
+    background-color: #dddddd;
+    border-radius: 50%;
+
+    &--active {
+      width: 10px;
+      height: 10px;
+
+      background: #f50049;
+    }
+
+    &--small {
+      width: 5px;
+      height: 5px;
+    }
   }
 }
