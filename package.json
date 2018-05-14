@@ -20,8 +20,8 @@
     "run-sequence": "^2.2.1"
   },
   "scripts": {
-    "start": "gulp build && gulp browser-sync",
-    "build": "gulp build"
+    "start": "gulp build && gulp spriteSVG && gulp browser-sync",
+    "build": "gulp build && gulp spriteSVG"
   },
   "author": "Maxim Mulyar",
   "license": "ISC",

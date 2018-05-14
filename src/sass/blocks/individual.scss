@@ -43,6 +43,8 @@
 
   &--not-flex {
     display: block;
+
+    margin-bottom: 0;
   }
 
   &--decorate-background {
@@ -90,6 +92,10 @@
     &--decorate-background {
       background: url('../img/bg-decorate-4--tablet.png') no-repeat 4px 119px,
                   #ffffff;
+    }
+
+    &--not-flex {
+      margin-bottom: 0;
     }
   }
 
