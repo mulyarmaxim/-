@@ -1,0 +1,199 @@
+.about {
+  margin-bottom: 124px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.about__column {
+  width: 555px;
+}
+
+.about__confectioner-image {
+  width: 509px;
+  margin-right: 30px;
+
+  border-radius: 50%;
+}
+
+.about__title {
+  margin-bottom: 17px;
+}
+
+.about__subtitle {
+  margin-bottom: 6px;
+
+  font-size: 35px;
+}
+
+.about__list {
+  margin: 0;
+}
+
+.about__list-title {
+  margin-bottom: 5px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about__list-description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about__confectioner-container {
+  margin-right: 42px;
+
+  &--mobile {
+    display: none;
+  }
+}
+
+.about__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  fill: #ffffff;
+}
+
+.about__quote {
+  width: 675px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+
+  font: 700 25px 'Playfair Display', $def-font;
+  font-style: italic;
+  text-align: center;
+}
+
+.about__painting {
+  display: block;
+  width: 149px;
+  margin: 0 auto;
+}
+
+.about__social {
+
+  &--mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    margin-bottom: 67px;
+  }
+
+  .about__container {
+    margin-bottom: 0;
+  }
+
+  .about__column {
+    width: 327px;
+  }
+
+  .about__title {
+    margin-bottom: 2px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 4px;
+
+    font-size: 26px;
+  }
+
+  .about__list-title {
+    margin-bottom: 4px;
+
+    font-size: 15px;
+  }
+
+  .about__list-description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .about__confectioner-container {
+    width: 313px;
+    margin-right: 0;
+  }
+
+  .about__icon {
+    width: 33px;
+    height: 22px;
+    margin-bottom: 5px;
+  }
+
+  .about__quote {
+    width: 374px;
+    margin-bottom: 23px;
+
+    font-size: 14px;
+  }
+
+  .about__painting {
+    width: 82px;
+    height: 40px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about {
+    margin-bottom: 29px;
+  }
+
+  .about__container {
+    display: block;
+  }
+
+  .about__social {
+    display: none;
+
+    &--mobile {
+      display: block;
+    }
+  }
+
+  .about__confectioner-container {
+    display: none;
+
+    &--mobile {
+      display: block;
+    }
+  }
+
+  .about__title {
+    text-align: center;
+  }
+
+  .about__row {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .about__confectioner-container {
+    width: 157px;
+    margin-right: 35px;
+  }
+
+  .about__column {
+    width: 100%;
+  }
+
+  .about__quote {
+    width: 100%;
+
+    font-size: 13px;
+  }
+
+  .about__list {
+    margin-bottom: 40px;
+  }
+}
