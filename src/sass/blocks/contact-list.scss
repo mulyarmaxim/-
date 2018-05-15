@@ -1,0 +1,22 @@
+.contact-list {
+  @include reset-list();
+
+  font-size: 20px;
+
+  .contact-list__item {
+    margin-bottom: 24px;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .contact-list__item {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contact-list__item {
+    margin-bottom: 15px;
+  }
+}
