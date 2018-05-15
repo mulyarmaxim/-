@@ -1,0 +1,106 @@
+.information {
+  padding-top: 120px;
+  padding-bottom: 128px;
+  margin-bottom: 72px;
+
+  color: #ffffff;
+
+  background: url('../img/bg-decorate-9--desktop.jpg') no-repeat center bottom,
+              #e3353d;
+}
+
+.information__title {
+  margin-bottom: 40px;
+
+  color: #ffffff;
+}
+
+.information__column {
+  width: 460px;
+  margin-left: auto;
+}
+
+.information__list {
+  margin: 0;
+
+  font-size: 64px;
+  font-family: 'Playfair Display', $def-font;
+  align-items: center;
+}
+
+.information__item {
+  margin-bottom: 35px;
+}
+
+.information__item-title {
+  font-family: Circe, $def-font;
+  font-size: 21px;
+  vertical-align: top;
+}
+
+.information__description {
+  margin: 0;
+
+  font-family: Circe, $def-font;
+  font-size: 20px;
+}
+
+@media (max-width: $tablet-width) {
+  .information {
+    padding-top: 48px;
+    padding-bottom: 30px;
+    margin-bottom: 41px;
+
+    background: url('../img/bg-decorate-9--tablet.jpg') no-repeat left bottom,
+    #e3353d;
+  }
+
+  .information__title {
+    margin-bottom: 28px;
+  }
+
+  .information__column {
+    width: 402px;
+  }
+
+  .information__list {
+    font-size: 36px;
+  }
+
+  .information__item {
+    padding-left: 11px;
+    margin-bottom: 22px;
+  }
+
+  .information__item-title {
+    font-size: 15px;
+  }
+
+  .information__description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .information {
+    padding-top: 30px;
+    padding-bottom: 138px;
+
+    background: url('../img/bg-decorate-9--mobile.jpg') no-repeat center bottom,
+                #e3353d;
+  }
+
+  .information__title {
+    text-align: center;
+  }
+
+  .information__column {
+    width: auto;
+  }
+
+  .information__item {
+    margin-bottom: 12px;
+
+    line-height: 20px;
+  }
+}
