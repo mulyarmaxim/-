@@ -1,0 +1,142 @@
+.contact {
+  padding-bottom: 290px;
+
+  background: url('../img/bg-decorate-10--desktop.jpg') no-repeat right bottom;
+}
+
+.contact__title {
+  margin-bottom: 25px;
+}
+
+.contact__subtitle {
+  margin-bottom: 15px;
+
+  font-size: 35px;
+}
+
+.contact__row {
+  display: flex;
+}
+
+.contact__form {
+  width: 550px;
+  margin-right: 81px;
+}
+
+.contact__column {
+  width: 327px;
+}
+
+.contact__description {
+  margin-top: 0;
+  margin-bottom: 45px;
+
+  font-size: 20px;
+}
+
+.contact__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #c9bcbb;
+  margin-bottom: 33px;
+
+  font: 14px/24px Circe, $def-font;
+
+  background: none;
+}
+
+.contact__submit {
+  padding: 11px 45px;
+  margin-top: 45px;
+
+  font-size: 19px;
+  text-transform: none;
+}
+
+.contact__list {
+  margin-bottom: 20px;
+}
+
+@media (max-width: $tablet-width) {
+  .contact {
+    padding-bottom: 145px;
+
+    background: url('../img/bg-decorate-10--tablet.jpg') no-repeat right bottom;
+  }
+
+  .contact__title {
+    margin-bottom: 4px;
+  }
+
+  .contact__subtitle {
+    margin-bottom: 17px;
+
+    font-size: 22px;
+  }
+
+  .contact__description {
+    width: 260px;
+    margin-bottom: 14px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .contact__form {
+    width: 348px;
+    margin-right: 66px;
+  }
+
+  .contact__input {
+    box-sizing: border-box;
+    padding: 13px 10px;
+    margin-bottom: 9px;
+
+    background: #ffffff;
+    border-radius: 5px;
+    border-bottom: none;
+  }
+
+  .contact__column {
+    width: 244px;
+  }
+
+  .contact__list {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+  .contact {
+    padding-bottom: 65px;
+
+    background: none;
+  }
+
+  .contact__title {
+    margin-bottom: 0;
+
+    text-align: center;
+  }
+
+  .contact__subtitle {
+    margin-bottom: 5px;
+  }
+
+  .contact__row {
+    display: block;
+  }
+
+  .contact__form {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .contact__submit {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
